@@ -30,7 +30,7 @@ body {
 }
 
 .title h1 {
-    font-size: 60px;
+    font-size: 120px;
    /* font-weight: bold;*/
     text-shadow:
         2px 2px 0 #0b2c5a,
@@ -115,14 +115,125 @@ body {
 }
 
 .footer {
-    background: #ddd;
+    /*background: #ddd;*/
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    font-size: 1000;
+    font-weight: 1000;
 }
 
 
 .card-right {
     width: 100%;
     padding: 10px;
+}
+
+
+.linea {
+    width: 80%;
+    height: 1px;
+    background: #123c6b;
+    border: none;
+    margin: 10px auto;
+}
+
+
+@media (max-width: 1024px) {
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info button {
+        width: 100%;
+    }
+
+    .related-grid {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .product-img img {
+        width: 200px;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .related-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related-grid-card {
+        width: 80%;
+        height: auto;
+    }
+
+    .links h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title {
+        padding: 15px;
+    }
+
+    .product-img img {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+
+    .product-info button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .related-grid img {
+        width: 150px;
+    }
+
+    .links h2 {
+        font-size: 24px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
 }
