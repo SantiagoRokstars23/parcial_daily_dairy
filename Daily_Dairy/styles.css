@@ -40,16 +40,16 @@ body {
 }
 
 .product {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #d4d4d4;
 }
 
 .product-img img {
-    width: 300px;
+    width: 275px;
     border: 1px solid #d4d4d4;
     padding: 30px;
 }
