@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b2d5c;
+    color: white;
+}
+
+
+.header {
+    padding: 20px;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.gallery {
+    padding: 40px 20px;
+}
+
+.gallery-grid {
+
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: white;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social {
+    margin: 20px 0;
+}
+
+.social a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.copy {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+@media (max-width: 1279px) {
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 799px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
